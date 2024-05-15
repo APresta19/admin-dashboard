@@ -1,0 +1,134 @@
+:root
+{
+    --light-green: #CDE8E5;
+    --green: #7AB2B2;
+    --dark-green: #4D869C;
+    --white: #EEF7FF;
+    --darker-white: #d6dee6;
+}
+*
+{
+    font-family: "Roboto", sans-serif;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+i
+{
+    font-size: 20px;
+}
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(1fr, 9);
+    grid-template-rows: repeat(1fr, 11);
+    height: 100vh;
+    width: 100%;
+}
+.dashboard
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 11;
+    background-color: var(--dark-green);
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: var(--white)
+}
+.dashboard div
+{
+    padding-left: 20px;
+}
+.middle-dash, .bottom-dash
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.header
+{
+    grid-column: 2 / 9;
+    grid-row: 1 / 2;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.left-header
+{
+    padding-left: 50px;
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+    width: 40%;
+}
+.right-header
+{
+    padding-right: 50px;
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+    width: 13%;
+}
+.user-info
+{
+    grid-column: 2 / 9;
+    grid-row: 2 / 3;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+.left-user
+{
+    padding-left: 50px;
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+    width: 40%;
+}
+.right-user
+{
+    padding-right: 50px;
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+    width: 30%;
+}
+.user-button
+{
+    border-radius: 30px;
+    background-color: var(--green);
+    border-color: var(--darker-green);
+    height: 50px;
+    width: 100%;
+}
+.projects {
+    grid-column: 2 / 8;
+    grid-row: 3 / 11;
+    background-color: var(--darker-white);
+}
+.announcements {
+    grid-column: 8 / 9;
+    grid-row: 3 / 7;
+    background-color: var(--darker-white);
+}
+.trending {
+    grid-column: 8 / 9;
+    grid-row: 7 / 11;
+    background-color: var(--darker-white); 
+}
+#search-box
+{
+    border-radius: 30px;
+    background-color: var(--darker-white);
+    border-color: var(--darker-white);
+    height: 20px;
+    width: 100%;
+}
