@@ -37,13 +37,19 @@ i
     font-weight: 700;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
-    color: var(--white)
+    color: var(--white);
+    gap: 50px;
 }
 .dashboard div
 {
     padding-left: 20px;
+    padding-right: 5px;
+}
+.top-dash
+{
+    padding-top: 40px;
 }
 .middle-dash, .bottom-dash
 {
@@ -84,6 +90,8 @@ i
     background-color: var(--white);
     display: flex;
     justify-content: space-between;
+    box-shadow: 1px 4px 4px rgb(35, 35, 35);
+    padding-bottom: 20px;
 }
 .left-user
 {
@@ -109,20 +117,58 @@ i
     height: 50px;
     width: 100%;
 }
-.projects {
-    grid-column: 2 / 8;
+.project {
+    grid-column: 2 / 7;
     grid-row: 3 / 11;
     background-color: var(--darker-white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.left-projects, .right-projects
+{
+    padding: 20px;
+}
+.project-title
+{
+    font-weight: 700;
+}
+.project-sec
+{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;;
 }
 .announcements {
-    grid-column: 8 / 9;
+    grid-column: 7 / 9;
     grid-row: 3 / 7;
     background-color: var(--darker-white);
+    padding: 20px;
+}
+.ann-sects
+{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+hr
+{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:black;
+    height: 1px;
 }
 .trending {
-    grid-column: 8 / 9;
+    grid-column: 7 / 9;
     grid-row: 7 / 11;
     background-color: var(--darker-white); 
+    padding: 20px;
 }
 #search-box
 {
