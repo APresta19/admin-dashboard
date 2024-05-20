@@ -137,7 +137,8 @@ i
 {
     background-color: white;
     padding: 20px;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    border-radius: 15px;
 }
 .announcements {
     grid-column: 7 / 9;
